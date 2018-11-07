@@ -1,0 +1,65 @@
+#slide-out.side-nav.fixed
+  %ul.custom-scrollbar
+    %li
+      .logo-wrapper.waves-light
+        = link_to root_path do
+          = image_tag 'demo/mdb-transparent.png', alt: 'Logo', class: 'img-fluid flex-center'
+    %li
+      %ul.collapsible.collapsible-accordion
+        %li
+          %a.collapsible-header.waves-effect.arrow-r
+            %i.fa.fa-chevron-right
+            Submit blog
+            %i.fa.fa-angle-down.rotate-icon
+          .collapsible-body
+            %ul
+              %li
+                %a.waves-effect{:href => "#"} Submit listing
+              %li
+                %a.waves-effect{:href => "#"} Registration form
+        %li
+          %a.collapsible-header.waves-effect.arrow-r
+            %i.fa.fa-hand-pointer-o
+            Instruction
+            %i.fa.fa-angle-down.rotate-icon
+          .collapsible-body
+            %ul
+              %li
+                %a.waves-effect{:href => "#"} For bloggers
+              %li
+                %a.waves-effect{:href => "#"} For authors
+        %li
+          %a.collapsible-header.waves-effect.arrow-r
+            %i.fa.fa-eye
+            About
+            %i.fa.fa-angle-down.rotate-icon
+          .collapsible-body
+            %ul
+              %li
+                %a.waves-effect{:href => "#"} Introduction
+              %li
+                %a.waves-effect{:href => "#"} Monthly meetings
+        %li
+          %a.collapsible-header.waves-effect.arrow-r
+            %i.fa.fa-envelope-o
+            Contact me
+            %i.fa.fa-angle-down.rotate-icon
+          .collapsible-body
+            %ul
+              %li
+                %a.waves-effect{:href => "#"} FAQ
+              %li
+                %a.waves-effect{:href => "#"} Write a message
+              %li
+                %a.waves-effect{:href => "#"} FAQ
+              %li
+                %a.waves-effect{:href => "#"} Write a message
+              %li
+                %a.waves-effect{:href => "#"} FAQ
+              %li
+                %a.waves-effect{:href => "#"} Write a message
+              %li
+                %a.waves-effect{:href => "#"} FAQ
+              %li
+                %a.waves-effect{:href => "#"} Write a message
+  .sidenav-bg.rgba-blue-strong

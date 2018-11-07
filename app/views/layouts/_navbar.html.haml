@@ -1,0 +1,16 @@
+%nav.navbar.navbar-expand-md.navbar-light.white.double-nav.scrolling-navbar.top-nav-collapse
+  .container-fluid
+    %a.p-3.mt-0.button-collapse{"data-activates" => "slide-out", :href => "#"}
+      %i.fa.fa-bars.fa-2x
+    = link_to root_path, class: 'navbar-brand mr-4' do
+      = image_tag 'demo/mdb-transparent.png', height: 30, alt: 'Logo'
+
+    .mr-auto
+      %nav{'aria-label' => :breadcrumb}
+        %ol.breadcrumb.d-inline-flex.pl-0.pt-0
+          = render_breadcrumbs separator: '', tag: "li class='breadcrumb-item'"
+
+    %ul.nav.navbar-nav.nav-flex-icons.ml-auto
+      = link_to 'https://github.com/ThanhKhoaIT/mdb', class: 'btn btn-black btn-rounded waves-effect waves-light', target: :_blank do
+        %i.fa.fa-github
+        Github

@@ -1,0 +1,81 @@
+%h4 Effect buttons
+.row
+  .col-12
+    %strong.ml-2 Dark style
+  .col-lg-2.text-left
+    = mdb_button('Dark Effect', dark: true)
+  .col-lg-10
+    %section
+      .wrap
+        %pre.language-ruby
+          %code
+            :preserve
+              mdb_button('Dark Effect', dark: true)
+  .col-12
+    %strong.ml-2 Light style
+  .col-lg-2.text-left
+    = mdb_button('Light Effect', light: true)
+  .col-lg-10
+    %section
+      .wrap
+        %pre.language-ruby
+          %code
+            :preserve
+              mdb_button('Light Effect', light: true)
+
+%h4 Basic buttons
+- styles = %w(Primary Default Secondary Success Danger Warning Info Light Dark Link)
+- styles.each do |style|
+  .row
+    .col-lg-2.text-left
+      = mdb_button(style, style: style.downcase)
+    .col-lg-10
+      %section
+        .wrap
+          %pre.language-ruby
+            %code
+              :preserve
+                mdb_button('#{style}', style: :#{style.downcase})
+
+%h4 Basic buttons
+- styles = %w(Primary Default Secondary Success Danger Warning Info Light Dark Link)
+- styles.each do |style|
+  .row
+    .col-lg-2.text-left
+      = mdb_button(style, style: style.downcase)
+    .col-lg-10
+      %section
+        .wrap
+          %pre.language-ruby
+            %code
+              :preserve
+                mdb_button('#{style}', style: :#{style.downcase})
+
+%h4 Additional buttons
+- styles = %w(Elegant Unique Pink Purple Deep-purple Indigo Light-blue Cyan Dark-green Light-green Yellow Amber Deep-orange Brown Blue-grey MDB-color)
+- styles.each do |style|
+  .row
+    .col-lg-2.text-left
+      = mdb_button(style, style: style.downcase)
+    .col-lg-10
+      %section
+        .wrap
+          %pre.language-ruby
+            %code
+              :preserve
+                mdb_button('#{style}', style: :#{style.downcase})
+
+%h4 Gradient buttons
+- styles = %w(Peach Purple Blue Aqua)
+- styles.each do |style|
+  .row
+    .col-lg-2.text-left
+      = mdb_button(style, gradient: style.downcase)
+    .col-lg-10
+      %section
+        .wrap
+          %pre.language-ruby
+            %code
+              :preserve
+                mdb_button('#{style}', gradient: :#{style.downcase})
+
